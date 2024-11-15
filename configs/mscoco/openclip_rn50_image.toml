@@ -1,0 +1,17 @@
+[general]
+output_dir = 'outputs/mscoco/openclip_rn50_image/'
+model_flag = 'openclip_rn50'
+training_embeds_path = 'outputs/embeddings/mscoco_openclip_rn50_training_embeddings.npy'
+gpu_num = 0
+epochs =  [1000]
+batch_size = 50
+epsilon = 16
+lr = 0.02
+seed = 0
+number_images = 100
+gamma_epochs = 300
+modality = 'vision'
+dataset_flag = 'mscoco'
+max_epochs=1000
+train_test_flag = 'False'
+clean_embeds_path = 'outputs/mscoco/openclip_rn50/clean_embeds_full.npy'

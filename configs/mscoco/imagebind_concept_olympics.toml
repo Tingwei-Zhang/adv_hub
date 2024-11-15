@@ -1,0 +1,18 @@
+[general]
+output_dir = 'outputs/mscoco/imagebind/concept_olympics/'
+model_flag = 'imagebind'
+training_embeds_path = 'outputs/embeddings/mscoco_imagebind_training_embeddings.npy'
+clean_embeds_path = 'outputs/embeddings/imagebind_concept/olympics_emebdding.npy'
+gpu_num = 0
+epochs =  [1000]
+batch_size = 50
+epsilon = 16
+lr = 0.02
+seed = 0
+number_images = 100
+gamma_epochs = 300
+modality = 'vision'
+dataset_flag = 'mscoco'
+max_epochs=1000
+train_test_flag = 'False'
+
