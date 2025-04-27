@@ -1,5 +1,5 @@
 <h1 align="center"> 
-"Adversarial Hubness in Multi-Modal Retrieval </h1>
+Adversarial Hubness in Multi-Modal Retrieval </h1>
 
 <p align="center"> <i>Tingwei Zhang, Fnu Suya, Rishi Jha, Collin Zhang, Vitaly Shmatikov</i></p>
 
