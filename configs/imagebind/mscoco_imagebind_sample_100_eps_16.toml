@@ -1,0 +1,16 @@
+[general]
+output_dir = 'outputs/mscoco/imagebind/imagebind_sample_100_eps_16_new/'
+model_flag = 'imagebind'
+training_embeds_path = 'outputs/embeddings/imagebind/mscoco_imagebind_training_query_embeddings.npy'
+centroid_embeds_path = 'outputs/embeddings/imagebind/mscoco_imagebind_sample_100_centroid_embeddings.npy'
+gpu_num = 0
+epochs =  [300]
+batch_size = 20
+epsilon = 16
+lr = 0.02
+seed = 0
+number_images = 40
+gamma_epochs = 300
+modality = 'vision'
+dataset_flag = 'mscoco'
+max_epochs=300

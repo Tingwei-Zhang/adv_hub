@@ -1,0 +1,17 @@
+[general]
+output_dir          = 'str: output directory'
+model_flag          = 'str: model name ({audioclip, audioclip_partial, imagebind, openclip, openclip_rn50})'
+training_embeds_path = '(opt) str: path to training embeddings (.npy), mainly used for mscoco runs'
+centroid_embeds_path = 'str: path to centroid embeddings (.npy)'
+gpu_num             = 'int: gpu index'
+epochs              = 'list[int]: epoch checkpoints used for attack/saving'
+batch_size          = 'int: batch size'
+epsilon             = 'float: max perturbation (typically 16 for vision, 0.05 for audiocaps audio)'
+lr                  = 'float: initial learning rate'
+seed                = 'int: random seed'
+number_images       = 'int: number of items to attack'
+gamma_epochs        = 'int: lr step interval (lr *= 0.9 every gamma_epochs)'
+modality            = '{vision/audio}'
+dataset_flag        = '{mscoco/cub_200/audiocaps}'
+max_epochs          = '(opt) int: maximum optimization epoch budget'
+cross_modality      = "(opt) str bool-like: {'True'} in current configs"

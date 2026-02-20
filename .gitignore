@@ -1,0 +1,17 @@
+.checkpoints
+**/__pycache__/
+bpe/*
+outputs/*
+*.sh
+*.pyc
+*.pyo
+data/*
+bpe/bpe_simple_vocab_16e6.txt.gz
+__pycache__/
+*.py[cod]
+*.DS_Store
+qb-norm/data/*
+deleted/
+demo/
+qb-norm/output/*
+*.ipynb

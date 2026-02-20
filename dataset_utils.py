@@ -17,10 +17,10 @@ import random
 
 DATA_PATH = {
     'imagenet': '../adversarial_illusions/data/imagenet/',
-    'audiocaps': '../adversarial_illusions/data/AudioCaps/',
-    'audioset': '../adversarial_illusions/data/AudioCaps/',
-    'mscoco': '../adversarial_illusions/data/coco/',
-    'cub_200': '../adversarial_illusions/data/CUB_200_2011/',
+    'audiocaps': 'data/AudioCaps/',
+    'audioset': 'data/AudioCaps/',
+    'mscoco': 'data/coco/',
+    'cub_200': 'data/CUB_200_2011/',
 }
 
 TEMPLATES = {

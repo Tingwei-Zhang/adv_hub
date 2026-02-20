@@ -14,21 +14,21 @@ def load_model(model_flag, device):
     if model_flag == 'imagebind':
         model = ImageBindWrapper(imagebind_model.imagebind_huge(pretrained=True), device=device)
     elif model_flag == 'audioclip':
-        model = AudioCLIPWrapper(AudioCLIP(pretrained=f'../adversarial_illusions/bpe/AudioCLIP-Full-Training.pt'))
+        model = AudioCLIPWrapper(AudioCLIP(pretrained=f'bpe/AudioCLIP-Full-Training.pt'))
     elif model_flag == 'audioclip_partial':
-        model = AudioCLIPWrapper(AudioCLIP(pretrained=f'../adversarial_illusions/bpe/AudioCLIP-Partial-Training.pt'))
+        model = AudioCLIPWrapper(AudioCLIP(pretrained=f'bpe/AudioCLIP-Partial-Training.pt'))
     elif model_flag == 'openclip':
-        m, _, p = open_clip.create_model_and_transforms('ViT-H-14', pretrained='laion2b_s32b_b79k', cache_dir='../adversarial_illusions/bpe/')
+        m, _, p = open_clip.create_model_and_transforms('ViT-H-14', pretrained='laion2b_s32b_b79k', cache_dir='bpe/')
         model = OpenCLIPWrapper(m, p)
     elif model_flag == 'openclip_rn50':
-        m, _, p = open_clip.create_model_and_transforms('RN50', pretrained='openai', cache_dir='../adversarial_illusions/bpe/')
+        m, _, p = open_clip.create_model_and_transforms('RN50', pretrained='openai', cache_dir='bpe/')
         model = OpenCLIPWrapper(m, p)
     elif model_flag == 'openclip_vit_b32':
-        m, _, p = open_clip.create_model_and_transforms('ViT-B-32', pretrained='openai', cache_dir='../adversarial_illusions/bpe/')
+        m, _, p = open_clip.create_model_and_transforms('ViT-B-32', pretrained='openai', cache_dir='bpe/')
         model = OpenCLIPWrapper(m, p)
     elif 'openclip' in model_flag:
         _, backbone, pretrained = model_flag.split(';')
-        m, _, p = open_clip.create_model_and_transforms(backbone, pretrained=pretrained, cache_dir='../adversarial_illusions/bpe/')
+        m, _, p = open_clip.create_model_and_transforms(backbone, pretrained=pretrained, cache_dir='bpe/')
         model = OpenCLIPWrapper(m, p)
     else:
         raise NotImplementedError()

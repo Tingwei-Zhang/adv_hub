@@ -1,0 +1,15 @@
+[general]
+output_dir = 'outputs/mscoco/imagebind/imagebind_sample_100_eps_16_audiocaps/'
+model_flag = 'imagebind'
+centroid_embeds_path = 'outputs/embeddings/imagebind/audiocaps_imagebind_sample_100_centroid_embeddings.npy'
+gpu_num = 0
+epochs =  [2000]
+batch_size = 20
+epsilon = 16
+lr = 0.02
+seed = 0
+number_images = 100
+gamma_epochs = 300
+modality = 'vision'
+dataset_flag = 'mscoco'
+max_epochs=1000
