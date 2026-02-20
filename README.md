@@ -20,7 +20,7 @@ Most experiments run on a single NVIDIA A40 40g GPU.
 
 # Installation
 1. **Setup Environment:** run `conda env create -f environment.yml`.
-2. **Download Data:** Experiments use MSCOCO, CUB_200_2011, and AudioCaps datasets. For convenience, all necessary gallery and query embeddings for each dataset and encoder are provided as a release. To set up, download `data.zip`, then from the project root directory, run: `unzip /path/to/data.zip -d .`.
+2. **Download Data:** Experiments use the MSCOCO, CUB_200_2011, and AudioCaps datasets. For convenience, all necessary gallery and query embeddings for each dataset and encoder are provided as a release. To set up, download `data.zip` and place it into the `outputs` directory.
 3. **AudioCLIP Checkpoints:** To conduct any experiments on AudioCLIP, we require pretraining checkpoints.
     - Create the checkpoint directory:
       ```
